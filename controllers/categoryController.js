@@ -60,6 +60,7 @@ export const updateCategoryController = async (req, res) => {
 // get all cat
 export const categoryControlller = async (req, res) => {
   try {
+    console.log(req);
     const category = await categoryModel.find({});
     res.status(200).send({
       success: true,
